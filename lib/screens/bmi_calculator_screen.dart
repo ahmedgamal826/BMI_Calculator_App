@@ -25,7 +25,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         elevation: 0,
-        title: Text(
+        title: const Text(
           'Bmi Calculator',
           style: TextStyle(fontSize: 25),
         ),
@@ -58,7 +58,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                             'assets/male-gender.png',
                             width: 100,
                           ),
-                          Text(
+                          const Text(
                             'Male',
                             style: TextStyle(
                                 fontSize: 40, fontWeight: FontWeight.bold),
@@ -93,7 +93,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                             'assets/female_gender.png',
                             width: 100,
                           ),
-                          Text(
+                          const Text(
                             'Female',
                             style: TextStyle(
                                 fontSize: 40, fontWeight: FontWeight.bold),
@@ -120,7 +120,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                         color: Colors.white),
                     child: Column(
                       children: [
-                        Text(
+                        const Text(
                           'Height',
                           style: TextStyle(
                               fontSize: 50, fontWeight: FontWeight.bold),
@@ -130,13 +130,13 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                           children: [
                             Text(
                               currentSliderValue.toStringAsFixed(0),
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 50, fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 10,
                             ),
-                            Baseline(
+                            const Baseline(
                               baseline: 30,
                               baselineType: TextBaseline.alphabetic,
                               child: Text(
@@ -183,14 +183,14 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'weight',
                               style: TextStyle(
                                   fontSize: 40, fontWeight: FontWeight.bold),
                             ),
                             Text(
                               '$weight',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 45, fontWeight: FontWeight.bold),
                             ),
                             Row(
@@ -241,7 +241,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Age',
                               style: TextStyle(
                                   fontSize: 40,
@@ -250,7 +250,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                             ),
                             Text(
                               '$age',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 40,
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold),
@@ -309,7 +309,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Gender : ',
                                       style: TextStyle(
                                         fontSize: 35,
@@ -318,7 +318,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                     ),
                                     Text(
                                       '${male == 'Male' ? 'Male' : 'Female'}',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: 35,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.red),
@@ -328,7 +328,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'Age : ',
                                       style: TextStyle(
                                           fontSize: 35,
@@ -336,7 +336,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                     ),
                                     Text(
                                       '$age',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: 35,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.red),
@@ -346,7 +346,7 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text(
+                                    const Text(
                                       'BMI : ',
                                       style: TextStyle(
                                           fontSize: 35,
@@ -354,14 +354,14 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                     ),
                                     Text(
                                       '${(weight / pow(currentSliderValue / 100, 2)).toStringAsFixed(2)}',
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                           fontSize: 35,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.red),
                                     )
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 20,
                                 ),
                                 ElevatedButton(
@@ -370,8 +370,8 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                                     onPressed: () {
                                       Navigator.pop(context);
                                     },
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(8),
+                                    child: const Padding(
+                                      padding: EdgeInsets.all(8),
                                       child: Text(
                                         'Close',
                                         style: TextStyle(fontSize: 25),
@@ -383,9 +383,9 @@ class _BmiCalculatorScreenState extends State<BmiCalculatorScreen> {
                         ),
                       ));
             },
-            child: Padding(
-              padding: const EdgeInsets.only(
-                  top: 15, bottom: 15, right: 50, left: 50),
+            child: const Padding(
+              padding:
+                  EdgeInsets.only(top: 15, bottom: 15, right: 50, left: 50),
               child: Text(
                 'Calculate',
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),

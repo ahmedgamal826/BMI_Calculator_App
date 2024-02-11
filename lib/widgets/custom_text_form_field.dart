@@ -31,11 +31,11 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                 borderRadius: BorderRadius.circular(10),
               ),
               prefixIcon: widget.label == 'Email'
-                  ? Icon(
+                  ? const Icon(
                       Icons.mail,
                       color: Colors.black,
                     )
-                  : Icon(
+                  : const Icon(
                       Icons.password,
                       color: Colors.black,
                     ),
@@ -48,8 +48,8 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                           widget.obscurePassword = !widget.obscurePassword;
                         });
                       },
-                      icon: Icon(Icons.remove_red_eye))
-                  : Text('')),
+                      icon: const Icon(Icons.remove_red_eye))
+                  : const Text('')),
           validator: (value) {
             if (value!.isEmpty) return widget.validatorMessage;
           },

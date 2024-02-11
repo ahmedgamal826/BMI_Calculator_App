@@ -3,7 +3,7 @@ import 'package:bmi_calculator_app/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -28,14 +28,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   'assets/bmi.png',
                   width: 150,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   'Login To BMI Calculator',
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 CustomTextFormField(
@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   hintText: 'Enter Email',
                   controller: emailController,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 CustomTextFormField(
@@ -53,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   label: 'Password',
                   validatorMessage: 'Password us required',
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 18,
                 ),
                 CustomElevatedButton(

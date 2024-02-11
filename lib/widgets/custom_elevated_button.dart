@@ -16,7 +16,8 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.black, textStyle: TextStyle(fontSize: 30)),
+            backgroundColor: Colors.black,
+            textStyle: const TextStyle(fontSize: 30)),
         onPressed: () {
           setState(() {
             if (widget.formKey.currentState!.validate()) {
@@ -30,8 +31,8 @@ class _CustomElevatedButtonState extends State<CustomElevatedButton> {
             }
           });
         },
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
+        child: const Padding(
+          padding: EdgeInsets.all(8.0),
           child: Text(
             'Login',
             style: TextStyle(fontWeight: FontWeight.bold),
