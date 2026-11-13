@@ -36,7 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 CustomTextFormField(
                   validatorMessage: 'Email is required',
