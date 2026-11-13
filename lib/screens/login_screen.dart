@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 CustomTextFormField(
                   controller: passwordController,
-                  hintText: 'Enter Password',
+                  hintText: 'Please, Enter Password',
                   label: 'Password',
                   validatorMessage: 'Password us required',
                 ),
